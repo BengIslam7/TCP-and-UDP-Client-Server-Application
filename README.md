@@ -2,7 +2,7 @@
 
 # Application Client Serveur avec TCP
 
-# Description
+## Description
 
 Ce projet est une application client-serveur développée en C avec une interface graphique utilisant GTK. L'application permet aux utilisateurs de se connecter à un serveur, de s'authentifier, et d'exécuter diverses actions telles que :
 
@@ -11,9 +11,9 @@ Ce projet est une application client-serveur développée en C avec une interfac
 3. Afficher le contenu d'un fichier spécifié.
 4. Afficher la durée de la session client.
 
-# Fonctionnalités
+## Fonctionnalités
 
-# Côté Client
+### Côté Client
 
 - **Authentification :** Le client doit s'authentifier avec un nom d'utilisateur et un mot de passe pour accéder aux fonctionnalités.
 - **Interface Graphique :** Utilise GTK pour une interface graphique conviviale. Les fonctionnalités disponibles sont accessibles via des boutons.
@@ -23,7 +23,7 @@ Ce projet est une application client-serveur développée en C avec une interfac
   - **Contenu du Fichier :** Affiche le contenu d'un fichier spécifié par l'utilisateur.
   - **Durée de la Session :** Affiche la durée de la session client.
 
-# Côté Serveur
+### Côté Serveur
 
 - **Gestion des Clients :** Le serveur peut gérer plusieurs clients simultanément (jusqu'à une limite définie).
 - **Actions Disponibles :**
@@ -32,13 +32,13 @@ Ce projet est une application client-serveur développée en C avec une interfac
   - **Contenu du Fichier :** Envoie le contenu d'un fichier spécifié au client.
   - **Durée de la Session :** Envoie la durée de la session au client.
 
-# Prérequis
+## Prérequis
 
 - GTK 3.0
 - Bibliothèques standard de C (stdio.h, stdlib.h, string.h, unistd.h, arpa/inet.h, time.h)
 - Environnement POSIX pour la gestion des sockets
 
-# Compilation et Exécution
+## Compilation et Exécution
 
 1. **Compilation :**
    
@@ -46,49 +46,51 @@ Ce projet est une application client-serveur développée en C avec une interfac
 
 2. **Exécution :**
 
-# Exécution côté Serveur
+ **Exécution côté Serveur**
 
    ./serveurTCP
    
-# Exécution côté Client
+ **Exécution côté Client**
    
    ./clientTCPUI
    
-# Utilisation
+## Utilisation
 
 1. **Lancement du Serveur :** Exécutez le serveur en premier sur la machine hôte.
 2. **Lancement du Client :** Exécutez le client et connectez-vous en utilisant les informations d'identification suivantes :
-   - Nom d'utilisateur : `unix`
-   - Mot de passe : `unix`
-3. **Utilisation de l'Interface Graphique :** Utilisez les boutons pour effectuer les différentes actions disponibles.
+
+   - Nom d'utilisateur : unix
+   - Mot de passe : unix
+    
+4. **Utilisation de l'Interface Graphique :** Utilisez les boutons pour effectuer les différentes actions disponibles.
 
 # Application Client Serveur avec UDP
 
-# Description
+## Description
 
 Ce projet consiste en une application client-serveur utilisant des sockets UDP pour envoyer et recevoir des nombres aléatoires. Le client envoie un nombre aléatoire au serveur, et le serveur répond en renvoyant ce même nombre, suivi de la génération et de l'envoi de plusieurs nombres aléatoires au client.
 
-# Fonctionnalités
+## Fonctionnalités
 
-# Côté Serveur
+### Côté Serveur
 
 - Attend les connexions sur un port spécifié.
 - Reçoit un nombre du client.
 - Envoie ce nombre de retour au client comme confirmation.
 - Génère et envoie une séquence de nombres aléatoires au client, correspondant au nombre initial reçu.
 
-# Côté Client
+### Côté Client
 
 - Envoie un nombre aléatoire au serveur.
 - Reçoit une confirmation du nombre total de nombres aléatoires à recevoir.
 - Reçoit et affiche les nombres aléatoires envoyés par le serveur.
 
-# Prérequis
+## Prérequis
 
 - Environnement POSIX pour la gestion des sockets (Linux, macOS, etc.)
 - Compilateur C (GCC, Clang, etc.)
 
-# Compilation et Exécution
+## Compilation et Exécution
 
 1. **Compilation :**
    
@@ -96,13 +98,13 @@ Ce projet consiste en une application client-serveur utilisant des sockets UDP p
 
 2. **Exécution :**
 
-# Exécution côté Serveur
+**Exécution côté Serveur**
 
-   ./server <port>
+   ./server port
    
-# Exécution côté Client
+**Exécution côté Client**
    
-   ./client <address> <port>
+   ./client address port
 
 ## Exemple d'Utilisation
 
